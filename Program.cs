@@ -6,8 +6,10 @@ int idade = int.Parse(Console.ReadLine());
 
 int converteMes = (idade * 12);
 
-int converteDias = (converteMes * 30);
+int converteDias = (idade * 365);
 
 int converteHoras = (converteDias * 24);
 
-Console.WriteLine($"Sua idade é de: {idade} anos, {converteMes} meses, {converteDias} dias e {converteHoras} horas");
+int converteMin = (converteHoras * 60);
+
+Console.WriteLine($"Sua idade é de: {idade} anos, {converteMes} meses, {converteDias} dias, {converteHoras} horas e {converteMin} minutos");
